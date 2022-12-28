@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="667.0" prefWidth="1327.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ListView fx:id="listOfItems" disable="true" layoutX="900.0" layoutY="117.0" prefHeight="496.0" prefWidth="492.0" AnchorPane.bottomAnchor="54.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="117.0" />
+        <Button fx:id="deleteButton" disable="true" layoutX="1247.0" layoutY="87.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="48.0" text="Obriši" AnchorPane.rightAnchor="32.0" AnchorPane.topAnchor="87.0" />
+        <TextField fx:id="nameInput" disable="true" layoutX="23.0" layoutY="22.0" prefHeight="25.0" prefWidth="1276.0" promptText="Pretraži dostupne proizvode" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="31.0" AnchorPane.topAnchor="20.0" />
+        <Button fx:id="addButton" disable="true" layoutX="738.0" layoutY="622.0" mnemonicParsing="false" text="Dodaj" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="738.0" />
+        <TextField fx:id="quantityInput" disable="true" layoutX="20.0" layoutY="550.0" prefHeight="25.0" prefWidth="713.0" promptText="Unesite kolicinu" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" />
+        <Label fx:id="totalLabel" alignment="CENTER_RIGHT" disable="true" layoutX="1112.0" layoutY="617.0" prefHeight="17.0" prefWidth="185.0" text="Ukupno za platiti: 0.0 KM" AnchorPane.bottomAnchor="33.0" AnchorPane.rightAnchor="30.0">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Label>
+        <TableView fx:id="productsTable" disable="true" layoutX="20.0" layoutY="112.0" prefHeight="506.0" prefWidth="766.0">
+            <columns>
+                <TableColumn fx:id="barcodeColumn" prefWidth="120.0" text="Barkod" />
+                <TableColumn fx:id="nameColumn" prefWidth="106.0" text="Naziv" />
+                <TableColumn fx:id="priceColumn" prefWidth="94.0" text="Cijena" />
+                <TableColumn fx:id="materialColumn" prefWidth="203.0" text="Vrsta materijala" />
+                <TableColumn fx:id="quantityColumn" prefWidth="162.0" text="Količina na stanju" />
+            </columns>
+        </TableView>
+        <Button fx:id="doneButton" layoutX="812.0" layoutY="631.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="76.0" text="Zavrseno" />
+        <ComboBox fx:id="organizationalUnitIdBox" layoutX="20.0" layoutY="81.0" prefHeight="25.0" prefWidth="176.0" />
+        <Label layoutX="20.0" layoutY="64.0" text="Odaberite organizacionu jedinicu" />
+    </children>
+</AnchorPane>

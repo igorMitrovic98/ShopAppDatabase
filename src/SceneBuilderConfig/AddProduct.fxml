@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="476.0" prefWidth="367.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ChoiceBox fx:id="choiceBox" layoutX="149.0" layoutY="31.0" prefHeight="25.0" prefWidth="164.0" />
+        <ComboBox fx:id="producerBox" layoutX="149.0" layoutY="75.0" prefHeight="25.0" prefWidth="164.0" />
+        <TextField fx:id="nameInput" layoutX="149.0" layoutY="104.0" prefHeight="25.0" prefWidth="164.0" />
+        <TextField fx:id="priceInput" layoutX="149.0" layoutY="139.0" prefHeight="25.0" prefWidth="164.0" />
+        <TextField fx:id="vrstaInput" layoutX="149.0" layoutY="179.0" prefHeight="25.0" prefWidth="164.0" />
+        <TextField fx:id="typeOfMaterialInput" layoutX="149.0" layoutY="216.0" prefHeight="25.0" prefWidth="164.0" />
+        <TextField fx:id="barcodeInput" layoutX="149.0" layoutY="255.0" prefHeight="25.0" prefWidth="164.0" />
+        <TextField fx:id="brojZicaInput" disable="true" layoutX="149.0" layoutY="293.0" prefHeight="25.0" prefWidth="164.0" />
+        <TextField fx:id="konfiguracijaInput" disable="true" layoutX="149.0" layoutY="328.0" prefHeight="25.0" prefWidth="164.0" />
+        <Button fx:id="addButton" disable="true" layoutX="236.0" layoutY="408.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Dodaj" />
+        <Label layoutX="100.0" layoutY="143.0" text="Cijena" />
+        <Label layoutX="47.0" layoutY="108.0" text="Naziv proizvoda" />
+        <Label layoutX="102.0" layoutY="183.0" text="Vrsta" />
+        <Label layoutX="46.0" layoutY="220.0" text="Vrsta materijala" />
+        <Label layoutX="80.0" layoutY="297.0" text="Broj žica" />
+        <Label layoutX="55.0" layoutY="332.0" text="Konfiguracija" />
+        <Label layoutX="149.0" layoutY="14.0" prefHeight="17.0" prefWidth="164.0" text="Odaberite proizvod za dodati" />
+        <Label layoutX="90.0" layoutY="259.0" text="Barkod" />
+        <Label layoutX="149.0" layoutY="56.0" text="Odaberite proizvodjaca" />
+        <Button fx:id="backButton" layoutX="149.0" layoutY="408.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Nazad" />
+    </children>
+</AnchorPane>

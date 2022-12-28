@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane fx:id="tabPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="641.0" prefWidth="681.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+    <tabs>
+        <Tab fx:id="inInvoiceTab" text="Ulazna faktura">
+            <content>
+                <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="0.0" minWidth="0.0" prefHeight="644.0" prefWidth="696.0">
+                    <children>
+                        <Label fx:id="totalLabel" alignment="CENTER_RIGHT" layoutX="440.0" layoutY="47.0" prefHeight="17.0" prefWidth="202.0" text="Ukupno za platiti: 0.0 KM">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Button fx:id="printButton" layoutX="533.0" layoutY="573.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="109.0" text="Završi fakturu" />
+                        <ListView fx:id="listView" layoutX="37.0" layoutY="74.0" prefHeight="490.0" prefWidth="605.0" />
+                        <Button fx:id="addButton" layoutX="37.0" layoutY="573.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" text="Dodaj proizvod" />
+                        <Label fx:id="label" layoutX="37.0" layoutY="45.0" text="Ulazna faktura">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="outInvoiceTab" text="Izlazna faktura">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <Button fx:id="addButton1" layoutX="37.0" layoutY="573.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Dodaj proizvod" />
+                        <ListView fx:id="listView1" layoutX="37.0" layoutY="74.0" prefHeight="490.0" prefWidth="605.0" />
+                        <Button fx:id="printButton1" layoutX="558.0" layoutY="573.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="84.0" text="Štampaj" />
+                        <Label fx:id="totalLabel1" alignment="CENTER_RIGHT" layoutX="440.0" layoutY="47.0" prefHeight="17.0" prefWidth="202.0" text="Ukupno za platiti: 0.0 KM">
+                            <font>
+                                <Font name="System Bold" size="12.0" />
+                            </font>
+                        </Label>
+                        <Label fx:id="label1" layoutX="37.0" layoutY="45.0" text="Izlazna faktura">
+                            <font>
+                                <Font name="System Bold" size="15.0" />
+                            </font>
+                        </Label>
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="addProductTab" text="Dodavanje proizvoda">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="productsTable2" layoutX="20.0" layoutY="40.0" prefHeight="516.0" prefWidth="641.0">
+                            <columns>
+                                <TableColumn fx:id="barcodeColumn" prefWidth="122.0" text="Barkod" />
+                                <TableColumn fx:id="nameColumn" prefWidth="101.0" text="Naziv" />
+                                <TableColumn fx:id="priceColumn" prefWidth="111.0" text="Cijena" />
+                                <TableColumn fx:id="materialColumn" prefWidth="101.0" text="Vrsta materijala" />
+                                <TableColumn fx:id="producerColumn" prefWidth="93.0" text="JIB proizvođača" />
+                            </columns>
+                        </TableView>
+                        <Button fx:id="addProductButton2" layoutX="569.0" layoutY="567.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="92.0" text="Dodaj" />
+                        <Button fx:id="deleteProductButton2" layoutX="357.0" layoutY="567.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="95.0" text="Obrisi" />
+                        <Button fx:id="updateProductButton2" layoutX="466.0" layoutY="567.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="89.0" text="Ažuriraj" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+        <Tab fx:id="addProducerTab" text="Dodavanje proizvođača">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                    <children>
+                        <TableView fx:id="producerTable3" layoutX="33.0" layoutY="47.0" prefHeight="499.0" prefWidth="615.0">
+                            <columns>
+                                <TableColumn fx:id="jibColumn" prefWidth="139.0" text="JIB" />
+                                <TableColumn fx:id="producerNameColumn" prefWidth="141.0" text="Naziv" />
+                                <TableColumn fx:id="producerPhoneColumn" prefWidth="175.0" text="Telefon" />
+                                <TableColumn fx:id="placeColumn" prefWidth="159.0" text="MjestoID" />
+                            </columns>
+                        </TableView>
+                        <Button fx:id="addProducerButton" layoutX="565.0" layoutY="562.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="83.0" text="Dodaj" />
+                        <Button fx:id="deleteProducerButton" layoutX="468.0" layoutY="562.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Obrisi" />
+                    </children>
+                </AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

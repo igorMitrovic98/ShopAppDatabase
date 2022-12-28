@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" fx:id="itemAnchor" prefHeight="40.0" prefWidth="451.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <Label fx:id="nameLabel" layoutY="5.0" text="Proizvod" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="2.0" AnchorPane.topAnchor="5.0">
+            <font>
+                <Font name="System Bold" size="13.0" />
+            </font>
+        </Label>
+        <Label fx:id="totalLabel" alignment="CENTER_RIGHT" layoutX="338.0" layoutY="5.0" prefHeight="30.0" prefWidth="99.0" text="ukupno: 50 KM" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="5.0" />
+        <Label fx:id="quantityLabel" layoutX="318.0" layoutY="5.0" text="x5" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="121.0" AnchorPane.topAnchor="5.0" />
+    </children>
+</AnchorPane>

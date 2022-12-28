@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="243.0" prefWidth="426.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ComboBox fx:id="placeBox" layoutX="182.0" layoutY="31.0" prefHeight="25.0" prefWidth="209.0" />
+        <Label layoutX="14.0" layoutY="35.0" text="Odaberite mjesto proizvođača" />
+        <TextField fx:id="uinInput" layoutX="182.0" layoutY="83.0" prefHeight="25.0" prefWidth="209.0" />
+        <TextField fx:id="nameInput" layoutX="182.0" layoutY="128.0" prefHeight="25.0" prefWidth="209.0" />
+        <TextField fx:id="phoneInput" layoutX="182.0" layoutY="173.0" prefHeight="25.0" prefWidth="209.0" />
+        <Label layoutX="94.0" layoutY="87.0" text="JIB proizvođača" />
+        <Label layoutX="144.0" layoutY="132.0" text="Naziv" />
+        <Label layoutX="139.0" layoutY="177.0" text="Telefon" />
+        <Button fx:id="addButton" layoutX="321.0" layoutY="210.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Dodaj" />
+        <Button fx:id="backButton" layoutX="236.0" layoutY="210.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="70.0" text="Nazad" />
+    </children>
+</AnchorPane>

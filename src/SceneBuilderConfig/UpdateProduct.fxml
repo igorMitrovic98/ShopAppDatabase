@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="355.0" prefWidth="430.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <ComboBox fx:id="producerBox" layoutX="125.0" layoutY="14.0" prefHeight="25.0" prefWidth="261.0" />
+        <TextField fx:id="nameInput" layoutX="125.0" layoutY="49.0" prefHeight="25.0" prefWidth="261.0" />
+        <TextField fx:id="priceInput" layoutX="125.0" layoutY="80.0" prefHeight="25.0" prefWidth="261.0" />
+        <TextField fx:id="vrstaInput" layoutX="125.0" layoutY="114.0" prefHeight="25.0" prefWidth="261.0" />
+        <TextField fx:id="typeOfMaterialInput" layoutX="125.0" layoutY="148.0" prefHeight="25.0" prefWidth="261.0" />
+        <TextField fx:id="brojZicaInput" disable="true" layoutX="125.0" layoutY="180.0" prefHeight="25.0" prefWidth="261.0" />
+        <TextField fx:id="konfiguracijaInput" disable="true" layoutX="125.0" layoutY="214.0" prefHeight="25.0" prefWidth="261.0" />
+        <Button fx:id="updateButton" layoutX="301.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="85.0" text="Azuriraj" />
+        <Label layoutX="77.0" layoutY="84.0" text="Cijena" />
+        <Label layoutX="25.0" layoutY="53.0" text="Naziv proizvoda" />
+        <Label layoutX="79.0" layoutY="118.0" text="Vrsta" />
+        <Label layoutX="32.0" layoutY="152.0" text="Vrsta materijala" />
+        <Label layoutX="63.0" layoutY="184.0" text="Broj žica" />
+        <Label layoutX="38.0" layoutY="218.0" text="Konfiguracija" />
+        <Label layoutX="51.0" layoutY="18.0" text="Proizvođač" />
+        <Button fx:id="backButton" layoutX="219.0" layoutY="284.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="73.0" text="Nazad" />
+    </children>
+</AnchorPane>
